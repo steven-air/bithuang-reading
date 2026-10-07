@@ -21,6 +21,10 @@ python -m http.server 4173
 
 这是无构建步骤的静态页面，`index.html` 可直接部署。如果保留在已有仓库的 `bithuang-reading/` 子目录，建议使用 GitHub Actions 或把该目录内容移动到 Pages 根目录。
 
+当前公开地址：<https://steven-air.github.io/bithuang-reading/>
+
+金水 / 五行周期研究已拆分到独立站点：<https://steven-air.github.io/bithuang-jinshui/>
+
 也可以在本目录直接初始化并推送：
 
 ```powershell
