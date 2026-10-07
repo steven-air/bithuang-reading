@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="比特皇公开资料的结构化阅读笔记：经典语料、交易纪律、核心思想与风控规则。">
+  <title>比特皇交易笔记 · 读懂系统，先守纪律</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="回到顶部">
+        <span class="brand-mark">BH</span>
+        <span class="brand-copy"><strong>比特皇交易笔记</strong><small>TRADING FIELD NOTES</small></span>
+      </a>
+      <div class="top-actions">
+        <label class="search-box" for="site-search">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <input id="site-search" type="search" placeholder="搜索语料、纪律、风控…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换显示模式" title="切换显示模式"><i data-lucide="sun-moon" aria-hidden="true"></i></button>
+        <a class="github-button" href="https://github.com/new" target="_blank" rel="noreferrer"><i data-lucide="git-branch" aria-hidden="true"></i><span>发布到 GitHub</span></a>
+      </div>
+    </header>
+
+    <div class="layout" id="top">
+      <aside class="sidebar" aria-label="章节导航">
+        <div class="sidebar-inner">
+          <div class="side-kicker">READING INDEX</div>
+          <nav class="toc">
+            <a class="toc-link active" href="#overview" data-nav="overview"><span>01</span>先读结论</a>
+            <a class="toc-link" href="#ideas" data-nav="ideas"><span>02</span>核心交易思想</a>
+            <a class="toc-link" href="#system" data-nav="system"><span>03</span>系统拆解</a>
+            <a class="toc-link" href="#discipline" data-nav="discipline"><span>04</span>交易纪律</a>
+            <a class="toc-link" href="#risk" data-nav="risk"><span>05</span>风控规则</a>
+            <a class="toc-link" href="#quotes" data-nav="quotes"><span>06</span>经典语料</a>
+            <a class="toc-link" href="#timeline" data-nav="timeline"><span>07</span>实盘复盘</a>
+            <a class="toc-link" href="#sources" data-nav="sources"><span>08</span>资料与边界</a>
+          </nav>
+          <div class="side-progress">
+            <div class="progress-head"><span>阅读进度</span><strong id="progress-label">0%</strong></div>
+            <div class="progress-track"><span id="progress-bar"></span></div>
+            <p>勾选纪律卡片，留下自己的执行记录。</p>
+          </div>
+          <div class="side-note"><i data-lucide="quote" aria-hidden="true"></i><p>先活下来，再谈复利。</p></div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section class="hero section-block" id="overview" data-section="overview">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="live-dot"></span>公开资料 · 结构化阅读</div>
+            <h1>读懂一套交易系统，<em>先守住自己。</em></h1>
+            <p class="hero-lede">把比特皇公开分享里的方法、纪律、风控与反思拆成可检索的知识卡片。收益属于历史，规则才值得带走。</p>
+            <div class="hero-cta">
+              <a class="primary-button" href="#ideas">从核心思想开始 <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+              <a class="text-button" href="#quotes">先看经典语料 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="hero-meta"><span>整理自 5 份资料</span><span class="meta-dot"></span><span>覆盖 8 个阅读章节</span><span class="meta-dot"></span><span>最后整理 2026.10</span></div>
+          </div>
+          <div class="hero-visual" aria-label="从判断到执行的流程图">
+            <img src="assets/market-pulse.png" alt="深色背景上的市场走势线图">
+            <div class="chart-overlay">
+              <span class="chart-label">PROCESS / 01</span>
+              <strong>等待 → 试错 → 持有 → 退出</strong>
+              <small>把不可控的行情，变成可执行的动作。</small>
+            </div>
+            <div class="chart-axis"><span>趋势确认</span><span>优势入场</span><span>风险退出</span></div>
+          </div>
+        </section>
+
+        <section class="section-block summary-grid" aria-label="资料概览">
+          <div class="section-intro compact-intro"><span class="section-number">00 / SNAPSHOT</span><h2>先把全局看明白</h2></div>
+          <div class="metric-row">
+            <div class="metric"><strong>5</strong><span>份资料</span><small>实盘分析、采访、语录</small></div>
+            <div class="metric"><strong>4</strong><span>条主轴</span><small>思想 · 系统 · 纪律 · 风控</small></div>
+            <div class="metric"><strong>10</strong><span>段实盘阶段</span><small>公开数据的整理与反思</small></div>
+            <div class="metric"><strong>1</strong><span>个底层命题</span><small>活着，比收益更重要</small></div>
+          </div>
+        </section>
+
+        <section class="section-block" id="ideas" data-section="ideas">
+          <div class="section-heading"><div><span class="section-number">01 / CORE IDEAS</span><h2>核心交易思想</h2></div><p>不是追逐每一根 K 线，而是把注意力放到少数高赔率机会。</p></div>
+          <div class="idea-grid">
+            <article class="idea-card featured" data-searchable="核心交易思想 顺势 趋势 30% 等待">
+              <div class="card-top"><span class="card-index">01</span><i data-lucide="trending-up" aria-hidden="true"></i></div>
+              <h3>顺势而为，等大波动</h3>
+              <p>先观察大势，只在可能出现 30% 以上波动的阶段耐心等待。趋势没有展开时，空仓也是动作。</p>
+              <div class="card-tag">趋势优先</div>
+            </article>
+            <article class="idea-card" data-searchable="核心交易思想 级别 趋势 交易级别">
+              <div class="card-top"><span class="card-index">02</span><i data-lucide="layers-3" aria-hidden="true"></i></div>
+              <h3>先定级别，再定动作</h3>
+              <p>小时级别的波动与日线级别的趋势不是一回事。开单前先确定自己交易的时间级别，止盈止损才不会漂移。</p>
+              <div class="card-tag">级别意识</div>
+            </article>
+            <article class="idea-card" data-searchable="核心交易思想 复盘 盘感 练习">
+              <div class="card-top"><span class="card-index">03</span><i data-lucide="repeat-2" aria-hidden="true"></i></div>
+              <h3>复盘是把行情读成语言</h3>
+              <p>把每一段 K 线组合当成词语和段落。看得足够多，面对当下走势时，脑中才会出现概率最大的路径。</p>
+              <div class="card-tag">长期训练</div>
+            </article>
+            <article class="idea-card" data-searchable="核心交易思想 简单 技术分析 心态">
+              <div class="card-top"><span class="card-index">04</span><i data-lucide="focus" aria-hidden="true"></i></div>
+              <h3>少一点预测，多一点执行</h3>
+              <p>技术指标有局限，市场不可预测。相信图表给出的信号，别让先入为主的观点替眼睛做决定。</p>
+              <div class="card-tag">知行合一</div>
+            </article>
+          </div>
+          <div class="pull-quote"><span class="quote-mark">“</span><p>交易不是比谁跑得快，而是一场艰难的马拉松，比拼的是耐力，是谁能活到最后。</p><span class="quote-source">— 语录 2 · 07</span></div>
+        </section>
+
+        <section class="section-block" id="system" data-section="system">
+          <div class="section-heading"><div><span class="section-number">02 / THE SYSTEM</span><h2>系统拆解</h2></div><p>把一笔交易拆成五个可检查的节点，任何一个节点模糊，都先停手。</p></div>
+          <div class="system-flow">
+            <div class="flow-step"><span>01</span><i data-lucide="radar" aria-hidden="true"></i><h3>确认趋势</h3><p>基本面热点 + 技术面定向。没有催化与结构，优先保本金。</p></div>
+            <div class="flow-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+            <div class="flow-step"><span>02</span><i data-lucide="crosshair" aria-hidden="true"></i><h3>寻找位置</h3><p>支撑位做多，压力位做空；趋势中关注 4 小时 Boll 下/上轨。</p></div>
+            <div class="flow-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+            <div class="flow-step"><span>03</span><i data-lucide="shield-check" aria-hidden="true"></i><h3>先算止损</h3><p>开单前先问离止损多远，幅度是否在承受范围内。</p></div>
+            <div class="flow-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+            <div class="flow-step"><span>04</span><i data-lucide="plus-circle" aria-hidden="true"></i><h3>顺势加仓</h3><p>只给盈利仓加仓；加仓像新单一样设置止损，不摊平亏损。</p></div>
+            <div class="flow-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+            <div class="flow-step"><span>05</span><i data-lucide="log-out" aria-hidden="true"></i><h3>退出复盘</h3><p>反转、止盈或失效就退出；记录原因，给下一次决策留下证据。</p></div>
+          </div>
+          <div class="rule-table-wrap">
+            <div class="table-caption"><span>关键动作对照表</span><span class="caption-note">整理自采访录与实盘分析</span></div>
+            <table class="rule-table">
+              <thead><tr><th>节点</th><th>资料中的动作</th><th>可执行检查句</th></tr></thead>
+              <tbody>
+                <tr><td>交易级别</td><td>先确定小时、2 小时、4 小时或日线级别</td><td>我准备持有多久？哪个级别证明我错了？</td></tr>
+                <tr><td>入场方式</td><td>确定性高可一次开满，不确定则小区间分批</td><td>如果只成交 30%，剩下的计划是什么？</td></tr>
+                <tr><td>止损</td><td>前低/前高或可承受的保证金亏损范围</td><td>止损触发后，我是否会无条件执行？</td></tr>
+                <tr><td>止盈</td><td>一次性止盈、分批止盈或对冲</td><td>行情不再符合预期时，我是否有退出按钮？</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section-block" id="discipline" data-section="discipline">
+          <div class="section-heading"><div><span class="section-number">03 / DISCIPLINE</span><h2>交易纪律</h2></div><p>把“我应该”变成“我会在触发条件出现时执行”。点击卡片记录今天的自检。</p></div>
+          <div class="filter-row" role="group" aria-label="纪律分类筛选">
+            <button class="filter-button active" data-filter="all" type="button">全部 <span>8</span></button>
+            <button class="filter-button" data-filter="entry" type="button">入场 <span>2</span></button>
+            <button class="filter-button" data-filter="risk" type="button">风险 <span>3</span></button>
+            <button class="filter-button" data-filter="mind" type="button">心态 <span>3</span></button>
+          </div>
+          <div class="discipline-grid">
+            <button class="discipline-card" data-category="entry" data-rule-id="level" type="button"><span class="check-icon"><i data-lucide="check" aria-hidden="true"></i></span><span><strong>开单前先定级别</strong><small>不在不同时间级别之间随意切换解释。</small></span><em>入场</em></button>
+            <button class="discipline-card" data-category="entry" data-rule-id="split" type="button"><span class="check-icon"><i data-lucide="check" aria-hidden="true"></i></span><span><strong>不确定就分批建仓</strong><small>避免一次性押满，把“踏空”和“追高”变成可管理的取舍。</small></span><em>入场</em></button>
+            <button class="discipline-card" data-category="risk" data-rule-id="stop" type="button"><span class="check-icon"><i data-lucide="check" aria-hidden="true"></i></span><span><strong>做错不扛单</strong><small>做错不可怕，归零才可怕；止损是系统的一部分。</small></span><em>风险</em></button>
+            <button class="discipline-card" data-category="risk" data-rule-id="profit-add" type="button"><span class="check-icon"><i data-lucide="check" aria-hidden="true"></i></span><span><strong>只给盈利仓加仓</strong><small>亏损加仓会扩大亏损，盈利加仓也要像新单一样设止损。</small></span><em>风险</em></button>
+            <button class="discipline-card" data-category="risk" data-rule-id="pause" type="button"><span class="check-icon"><i data-lucide="check" aria-hidden="true"></i></span><span><strong>连续三次止损就暂停</strong><small>当日无条件休息一天，先让心态退出市场。</small></span><em>风险</em></button>
+            <button class="discipline-card" data-category="mind" data-rule-id="wait" type="button"><span class="check-icon"><i data-lucide="check" aria-hidden="true"></i></span><span><strong>没有机会时耐心等待</strong><small>空仓不是错过，是给高赔率机会留出空间。</small></span><em>心态</em></button>
+            <button class="discipline-card" data-category="mind" data-rule-id="simple" type="button"><span class="check-icon"><i data-lucide="check" aria-hidden="true"></i></span><span><strong>看不懂的不碰</strong><small>不熟悉的币、不理解的走势，不用用交易证明自己。</small></span><em>心态</em></button>
+            <button class="discipline-card" data-category="mind" data-rule-id="review" type="button"><span class="check-icon"><i data-lucide="check" aria-hidden="true"></i></span><span><strong>每天留下复盘证据</strong><small>记录判断、执行、偏差，别只记得盈亏结果。</small></span><em>心态</em></button>
+          </div>
+        </section>
+
+        <section class="section-block risk-section" id="risk" data-section="risk">
+          <div class="section-heading"><div><span class="section-number">04 / RISK CONTROL</span><h2>风控规则</h2></div><p>收益曲线很吸引人，真正决定能否留下来的，是每一次失误的成本。</p></div>
+          <div class="risk-layout">
+            <div class="risk-principles">
+              <div class="risk-callout"><span class="callout-icon"><i data-lucide="life-buoy" aria-hidden="true"></i></span><div><strong>第一原则：活着永远比收益重要</strong><p>资料里最稳定的共识不是“赚多少”，而是做错时果断退出、保留下一次机会。</p></div></div>
+              <div class="risk-list">
+                <div class="risk-item"><span>01</span><div><strong>单笔可承受亏损 ≤ 总资金 5%</strong><p>这是资料整理中的操作性标准；每个人都应按自身承受能力再下调。</p></div></div>
+                <div class="risk-item"><span>02</span><div><strong>盈亏比先于胜率</strong><p>平均盈利 × 胜率 − 平均亏损 × 败率 &gt; 0，才有长期正期望。</p></div></div>
+                <div class="risk-item"><span>03</span><div><strong>规模越大，杠杆越低</strong><p>从小资金试错到复利增长，容错率比刺激的倍数更重要。</p></div></div>
+              </div>
+            </div>
+            <div class="calculator" aria-label="单笔风险估算器">
+              <div class="calculator-head"><span class="section-number">QUICK CHECK</span><i data-lucide="calculator" aria-hidden="true"></i></div>
+              <h3>单笔风险估算</h3><p>输入账户规模与计划止损，看看这笔交易是否超过 5% 的资料参考线。</p>
+              <label>账户资金（USDT）<input id="capital-input" type="number" min="0" step="100" value="10000"></label>
+              <label>计划亏损（USDT）<input id="loss-input" type="number" min="0" step="10" value="300"></label>
+              <div class="calc-result"><span>风险占比</span><strong id="risk-percent">3.00%</strong><em id="risk-status">在参考线内</em></div>
+              <div class="calc-bar"><span id="calc-bar-fill"></span><i></i></div>
+              <small class="calc-footnote">参考线：5% · 仅作资料整理中的自检工具</small>
+            </div>
+          </div>
+          <div class="warning-strip"><i data-lucide="triangle-alert" aria-hidden="true"></i><span>资料中的高杠杆、高收益案例具有强烈的幸存者偏差，不应直接复制。先复制流程，再用小仓位验证。</span></div>
+        </section>
+
+        <section class="section-block" id="quotes" data-section="quotes">
+          <div class="section-heading"><div><span class="section-number">05 / QUOTATIONS</span><h2>经典语料</h2></div><p>原话保留锋利感，旁边给出“读法”，方便从句子回到动作。</p></div>
+          <div class="quote-toolbar"><div class="quote-filters" role="group" aria-label="语料分类"><button class="quote-filter active" data-quote-filter="all" type="button">全部 <span>11</span></button><button class="quote-filter" data-quote-filter="mind" type="button">心态 <span>4</span></button><button class="quote-filter" data-quote-filter="execution" type="button">执行 <span>4</span></button><button class="quote-filter" data-quote-filter="risk" type="button">风险 <span>3</span></button></div><span class="quote-count" id="quote-count">显示 11 条</span></div>
+          <div class="quote-grid">
+            <article class="quote-card" data-quote-category="mind" data-searchable="经典语料 心态 马拉松 耐力"><div class="quote-card-head"><span>语录 2 · 07</span><button class="copy-button" type="button" data-copy="交易不是比谁跑得快，而是一场艰难的马拉松，比拼的是耐力，是谁能活到最后。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“交易不是比谁跑得快，而是一场艰难的马拉松，比拼的是耐力，是谁能活到最后。”</blockquote><p class="quote-read">读法：把收益目标从速度换成存活，把“慢”当成策略。</p></article>
+            <article class="quote-card" data-quote-category="risk" data-searchable="经典语料 风险 止损 活着"><div class="quote-card-head"><span>采访录 · 18:16</span><button class="copy-button" type="button" data-copy="我实盘能活到现在，就是因为在行情做错的时候，能果断止损，活着永远比收益重要。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“我实盘能活到现在，就是因为在行情做错的时候，能果断止损，活着永远比收益重要。”</blockquote><p class="quote-read">读法：止损不是交易之外的惩罚，而是交易系统的组成部分。</p></article>
+            <article class="quote-card" data-quote-category="execution" data-searchable="经典语料 执行 复盘 盘感"><div class="quote-card-head"><span>采访录 · 18:38</span><button class="copy-button" type="button" data-copy="复盘看过的行情越多，相当于看过的书越多。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“复盘看过的行情越多，相当于看过的书越多。”</blockquote><p class="quote-read">读法：盘感不是天赋，是样本量与持续复盘共同产生的压缩记忆。</p></article>
+            <article class="quote-card" data-quote-category="execution" data-searchable="经典语料 执行 交易级别 止损"><div class="quote-card-head"><span>采访录 · 18:19</span><button class="copy-button" type="button" data-copy="开单前首先考虑的不是盈利多少，而是离止损位有多少。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“开单前首先考虑的不是盈利多少，而是离止损位有多少。”</blockquote><p class="quote-read">读法：先把错误成本写出来，再讨论收益空间。</p></article>
+            <article class="quote-card" data-quote-category="mind" data-searchable="经典语料 心态 顺势 逆人性"><div class="quote-card-head"><span>语录 2 · 01</span><button class="copy-button" type="button" data-copy="逆人性训练的结果，低买高卖；止损认错；抓大趋势；忍受回撤；独立思考。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“逆人性训练的结果，低买高卖；止损认错；抓大趋势；忍受回撤；独立思考。”</blockquote><p class="quote-read">读法：把情绪问题拆成可训练的行为，而不是要求自己“永远冷静”。</p></article>
+            <article class="quote-card" data-quote-category="risk" data-searchable="经典语料 风险 机会 30% 等待"><div class="quote-card-head"><span>实盘分析 · 精选微博</span><button class="copy-button" type="button" data-copy="只在可能出现一波 30% 以上波动的机会时耐心等待。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“只在可能出现一波 30% 以上波动的机会时耐心等待。”</blockquote><p class="quote-read">读法：不是预测每次波动，而是给自己的出手设一个更高门槛。</p></article>
+            <article class="quote-card" data-quote-category="execution" data-searchable="经典语料 执行 趋势 级别"><div class="quote-card-head"><span>采访录 · 交易级别</span><button class="copy-button" type="button" data-copy="严格来讲，我认为所有的交易都是趋势交易，只不过趋势的级别不一样而已。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“严格来讲，我认为所有的交易都是趋势交易，只不过趋势的级别不一样而已。”</blockquote><p class="quote-read">读法：先写清楚你交易的是哪个级别，再决定持仓周期与退出条件。</p></article>
+            <article class="quote-card" data-quote-category="mind" data-searchable="经典语料 心态 预测 不可预测"><div class="quote-card-head"><span>采访录 · 19:10</span><button class="copy-button" type="button" data-copy="行情必须要承认是不可预测的，我之前微博也发过很多主观性的预测，很多次都打脸。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“行情必须要承认是不可预测的，我之前微博也发过很多主观性的预测，很多次都打脸。”</blockquote><p class="quote-read">读法：把预测改成条件反应，市场证明你错了就退出，不和行情争论。</p></article>
+            <article class="quote-card" data-quote-category="execution" data-searchable="经典语料 执行 成交量 衰竭"><div class="quote-card-head"><span>采访录 · 19:16</span><button class="copy-button" type="button" data-copy="我在观察行情中最重要的是看交易量，趋势行情中交易量的缩小意味着多头或者空头的衰竭。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“我在观察行情中最重要的是看交易量，趋势行情中交易量的缩小意味着多头或者空头的衰竭。”</blockquote><p class="quote-read">读法：价格方向之外，观察量能是否支持趋势继续，避免只盯一根 K 线。</p></article>
+            <article class="quote-card" data-quote-category="risk" data-searchable="经典语料 风险 加仓 浮盈 亏损"><div class="quote-card-head"><span>采访录 · 战略和战术</span><button class="copy-button" type="button" data-copy="一般只有在比较大级别的趋势行情中才会考虑加仓，浮盈加仓；如果亏损加仓，我认为是在扩大亏损。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“一般只有在比较大级别的趋势行情中才会考虑加仓，浮盈加仓；如果亏损加仓，我认为是在扩大亏损。”</blockquote><p class="quote-read">读法：加仓必须是优势扩张，不是用新资金替旧仓解套。</p></article>
+            <article class="quote-card" data-quote-category="mind" data-searchable="经典语料 心态 情绪 机器人 执行"><div class="quote-card-head"><span>采访录 · 交易纪律</span><button class="copy-button" type="button" data-copy="其实最好的结果就是交易过程中把自己锻炼成机器人，能够不带情绪地去交易。" aria-label="复制语料"><i data-lucide="copy" aria-hidden="true"></i></button></div><blockquote>“其实最好的结果就是交易过程中把自己锻炼成机器人，能够不带情绪地去交易。”</blockquote><p class="quote-read">读法：把情绪管理落到预案、止损和复盘记录，而不是依赖临场意志力。</p></article>
+          </div>
+          <div class="quote-empty" id="quote-empty" hidden>没有匹配的语料，试试“止损”或切换分类。</div>
+        </section>
+
+        <section class="section-block" id="timeline" data-section="timeline">
+          <div class="section-heading"><div><span class="section-number">06 / FIELD LOG</span><h2>实盘复盘</h2></div><p>把公开数据按阶段读：行情环境 → 推测动作 → 结果 → 可迁移的教训。</p></div>
+          <div class="timeline-summary"><div><strong>2019.02</strong><span>起始本金约 5,000U</span></div><div class="timeline-line"><span></span></div><div><strong>2021.11</strong><span>第十段公开阶段</span></div><div class="timeline-badge">10 段记录</div></div>
+          <div class="trade-table-wrap">
+            <table class="trade-table">
+              <thead><tr><th>阶段</th><th>市场环境</th><th>资料中的动作</th><th>结果 / 读法</th></tr></thead>
+              <tbody>
+                <tr><td><span class="phase-dot gain"></span>01</td><td>2019.02–06<br><small>单边上涨</small></td><td>15–20 倍做多，浮盈加仓</td><td class="gain-text">+4,285%<small>热点 + 趋势的放大样本</small></td></tr>
+                <tr><td><span class="phase-dot loss"></span>02</td><td>2019.06–12<br><small>宽幅震荡</small></td><td>趋势策略反复止损</td><td class="loss-text">−44%<small>策略与环境错配</small></td></tr>
+                <tr><td><span class="phase-dot gain"></span>03</td><td>2020.01–02<br><small>减半预期</small></td><td>约 5 倍做多，浮盈加仓</td><td class="gain-text">+491%<small>催化剂明确，持仓扩大</small></td></tr>
+                <tr><td><span class="phase-dot gain"></span>04</td><td>2020.02–03<br><small>快速下跌</small></td><td>约 1 倍做空，浮盈加仓</td><td class="gain-text">+49%<small>顺势也可以是空头</small></td></tr>
+                <tr><td><span class="phase-dot loss"></span>05</td><td>2020.03–05<br><small>上涨反转</small></td><td>轻仓做空或套保，严格止损</td><td class="loss-text">−8%<small>判断错时控制回撤</small></td></tr>
+                <tr><td><span class="phase-dot loss"></span>06</td><td>2020.05–07<br><small>窄幅震荡</small></td><td>趋势策略反复止损</td><td class="loss-text">−9%<small>没有方向时少交易</small></td></tr>
+                <tr><td><span class="phase-dot gain"></span>07–10</td><td>2020.07–2021.11<br><small>多段趋势</small></td><td>低倍顺势，盈利加仓</td><td class="gain-text">持续放大<small>不可复制的收益，不等于不可学习的流程</small></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section-block reading-path" aria-label="阅读路径">
+          <div class="section-heading"><div><span class="section-number">07 / READING PATH</span><h2>三种读法</h2></div><p>按你现在最需要的部分进入，不必从第一页线性读完。</p></div>
+          <div class="path-grid">
+            <a class="path-card" href="#discipline"><span class="path-icon"><i data-lucide="check-check" aria-hidden="true"></i></span><div><strong>我总是执行走样</strong><p>先读交易纪律，再用勾选卡片做一轮自检。</p></div><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a class="path-card" href="#system"><span class="path-icon"><i data-lucide="route" aria-hidden="true"></i></span><div><strong>我想搭一套系统</strong><p>沿着五步流程，把方向、入场、退出串起来。</p></div><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a class="path-card" href="#quotes"><span class="path-icon"><i data-lucide="bookmark" aria-hidden="true"></i></span><div><strong>我只想快速吸收</strong><p>从经典语料开始，每句话都配了一条动作读法。</p></div><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </section>
+
+        <section class="section-block sources-section" id="sources" data-section="sources">
+          <div class="section-heading"><div><span class="section-number">08 / SOURCES & BOUNDARIES</span><h2>资料与边界</h2></div><p>把原始材料、整理内容与推断分开，阅读才不会把故事误当成规则。</p></div>
+          <div class="sources-layout">
+            <div class="source-list">
+              <div class="source-item"><span>01</span><div><strong>比特皇实盘分析.pdf</strong><p>交易阶段、系统拆解、资金管理与作者反思的主要来源。</p></div><em>整理</em></div>
+              <div class="source-item"><span>02</span><div><strong>比特皇采访录.pdf</strong><p>交易级别、形态、复盘、仓位、止盈止损与纪律的原话来源。</p></div><em>原话</em></div>
+              <div class="source-item"><span>03</span><div><strong>比特皇语录2.pdf</strong><p>心态、耐心、逆人性、复利与长期训练的语料来源。</p></div><em>原话</em></div>
+              <div class="source-item muted-source"><span>04</span><div><strong>比特皇.pdf / 比特皇语录1.pdf</strong><p>以扫描页为主，本页仅做资料索引，未将不可验证内容写成结论。</p></div><em>索引</em></div>
+            </div>
+            <div class="boundary-note"><i data-lucide="info" aria-hidden="true"></i><div><strong>如何使用这份笔记</strong><p>这里整理的是公开材料里的方法与表达，不是收益承诺，也不是对历史收益的复刻指南。把“高杠杆、高收益”当成风险样本，把“等待、止损、复盘、暂停”当成可迁移的训练。</p><p class="mono-note">SOURCE STATUS: quoted / summarized / inferred clearly labeled</p></div></div>
+          </div>
+        </section>
+
+        <footer class="site-footer"><span>比特皇交易笔记 · private reading index</span><span>Built for slow reading, sharp execution.</span></footer>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
